@@ -11,6 +11,9 @@ const initialState = {
       setTodos: (state, action) => {
         state.todos = action.payload;
       },
+      loadTodos: (state, action) => {
+        state.todos = action.payload;
+      },
       addTodo: (state, action) => {
         // ✅ Now the payload already includes id, text, completed
         state.todos.push(action.payload);
@@ -25,7 +28,7 @@ const initialState = {
     },
   });
   
-  export const { setTodos, addTodo, toggleTodo, deleteTodo } = todoSlice.actions;
+  export const { setTodos, loadTodos, addTodo, toggleTodo, deleteTodo } = todoSlice.actions;
   export default todoSlice.reducer;
   
 

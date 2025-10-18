@@ -1,0 +1,4 @@
+- [x] Add loadTodos action to todoSlice.js to replace todos array.
+- [x] Update App.js to fetch todos from Firestore on user sign-in and clear on sign-out.
+- [x] Fix TodoList.js to use user-specific paths for updateDoc and deleteDoc, add useAuth import.
+- [ ] Test persistence by adding todos, signing out, signing in again.
